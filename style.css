@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Lexend+Deca&display=swap');
+
+:root{
+    --dark-blue: hsl(233, 47%, 7%);/* main background */
+    --dark-desaturated-blue:hsl(244, 38%, 16%);/* card background */
+    --soft-violet: hsl(277, 76%, 35%);/* accent */
+    --white: hsl(0, 0%, 100%);/* main heading, stats */
+    --transparent-white: hsla(0, 0%, 100%, 0.75);/* main paragraph */
+    --slightly-transparent-white: hsla(0, 0%, 100%, 0.6);/* cstat headings */
+    --font-inter: 'Inter';
+    --font-lexend: 'Lexend Deca';
+}
+
+body{
+    background-color: var(--dark-blue);
+}
+
+.component{
+    width: 940px;
+    height: 380px;
+    margin: auto;
+    margin-top: 130px;
+    background-color: var(--dark-desaturated-blue);
+    display: flex;
+    flex-flow: row;
+    border-radius: 10px;
+}
+
+.content-component{
+    padding: 50px;
+}
+
+.title-content{
+    color: var(--white);
+    font-family: var(--font-lexend);
+    font-weight: 700;
+    margin: 0;
+    font-size: 2.1em;
+}
+
+.text-color{
+    color: var(--soft-violet);
+}
+
+.descrip-content{
+    color: var(--slightly-transparent-white);
+    font-family: var(--font-inter);
+    font-size: 0.95em;
+    font-weight: 400;
+}
+
+.elemet-data{
+    display: flex;
+    flex-direction: row;
+    gap: 70px;
+    margin-top: 60px;
+}
+
+.data-num{
+    color: var(--white);
+    font-family: var(--font-lexend);
+    font-weight: 600;
+    font-size: 1.4em;
+    margin: 0;
+}
+
+.data-text{
+    color: var(--transparent-white);
+    font-family: var(--font-inter);
+    font-size: 0.8em;
+    font-weight: 400;
+    margin: 5px 0;
+}
+
+.content-img{
+    height: 100%;
+    display: flex;
+    position: relative;
+}
+
+.img-component{
+    height: 100%;
+    border-radius: 0 10px 10px 0;
+}
+
+.img-color{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: var(--soft-violet);
+    opacity: 0.4;
+    border-radius: 0 10px 10px 0;
+}
